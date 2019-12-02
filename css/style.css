@@ -13,13 +13,6 @@ html, body {
     font-size: 16px;
 }
 
-body {
-    /* margin: 0 auto; */
-    
-    /* display: flex;
-    flex-direction: column; */
-}
-
 h1, h2, h3, h4, h5, h6 {
     font-family: "Poppins", sans-serif;
     font-weight: 900;
@@ -34,6 +27,10 @@ nav {
 
 img {
     width: 100%;
+}
+
+.img-bg {
+    margin-bottom: -5px;;
 }
 
 /* links */
@@ -86,6 +83,7 @@ a:hover {
 .button__subscribe {
     background-color: #FF52C1;
     color: #FFF;
+    height: 40px;
 }
 
 .button__cta:hover,
@@ -108,6 +106,11 @@ header, main {
     margin: 10em 3em 3em 3em;
 }
 
+.header__bg-img {
+    width: 80%;
+    margin: 0 auto;
+}
+
 .header__description {
     width: 50%;
     margin: 0 auto;
@@ -115,12 +118,13 @@ header, main {
 
 .metrics__container {
     display: flex;
+    flex-wrap: wrap;
     margin-top: 5em;
 }
 
 .metrics__content {
-    width: 50%;
     display: flex;
+    flex-basis: 50%;
     flex-direction: column;
     align-items: center;
 }
@@ -159,9 +163,15 @@ header, main {
     padding-left: 3em;
 }
 
+.card__text,
+.card__img {
+    flex-basis: 50%;
+}
+
 .cta {
     width: 50%;
     margin: 0 auto 5em;
+    text-align: center;
 }
 
 /* footer */
@@ -201,14 +211,15 @@ ion-icon {
 
 .newsletter {
     display: flex;
+    align-items: center;
     flex-wrap: wrap;
-    /* align-content: center; */
 }
 
 input[type=email] {
     border-radius: 5px;
     padding: 5px;
-    margin-right: 2em;
+    margin: 5px 5px 5px 0;
+    height: 40px;
 }
 
 .footer__social-list {
@@ -235,6 +246,7 @@ input[type=email] {
 .attribution {
     font-size: 11px; 
     text-align: center;
+    margin-bottom: 10px;
 }
 
 .attribution a {
@@ -242,3 +254,57 @@ input[type=email] {
 }
 
 /* media queries */
+
+@media (max-width: 450px) {
+    .logo {
+        width: 60%;
+    }
+    .button__nav {
+        height: 30px;
+        width: 120px;
+    }
+    header {
+        width: 95%;
+    }
+    .header__cta {
+        margin: 5em 1em;
+    }
+    .header__description {
+        width: 80%;
+    }
+    .metrics__container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .metrics__content {
+        align-items: flex-start;
+    }
+    .card__container {
+        margin: 2em 0;
+    }
+    .middle-card {
+        flex-direction: column;
+    }
+    .card-with-bg {
+        flex-direction: column-reverse;
+    }
+    .card__text {
+        padding-left: 0;
+    }
+    .cta {
+        width: 95%;
+    }
+    .footer__container {
+        flex-direction: column-reverse;
+    }
+    .footer__contact, 
+    .footer__newsletter {
+        padding: 2em;
+    }
+    input[type=email] {
+        width: 95%;
+    }
+    .footer__social-list {
+        padding: 0 0 1em 2em;
+    }
+}

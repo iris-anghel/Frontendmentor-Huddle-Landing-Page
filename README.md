@@ -6,7 +6,10 @@
 
 Your task is to build out the project to the designs inside the `/design` folder. You will find both a mobile and a desktop version of the design to work to. 
 
-![iPad version](./images/iPad.png)
+[Live Preview](https://iris-anghel.github.io/Frontendmentor-Huddle-Landing-Page/)
 
-![iPhone version](./images/iPhone.png)
+<img src="./images/iPad.png" width="700px"/>
+
+<img src="./images/iPhone.png" width="300px"/>
+
 
